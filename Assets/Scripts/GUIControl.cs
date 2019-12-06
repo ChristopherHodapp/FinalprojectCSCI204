@@ -7,6 +7,7 @@ public class GUIControl : MonoBehaviour
     public Canvas playCanvas;
     public Canvas settingsCanvas;
     public Canvas creditsCanvas;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,7 @@ public class GUIControl : MonoBehaviour
         playCanvas.enabled = false;
         settingsCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        
     }
 
 
@@ -41,4 +43,6 @@ public class GUIControl : MonoBehaviour
     {
         creditsCanvas.enabled = false;
     }
+    
+
 }
