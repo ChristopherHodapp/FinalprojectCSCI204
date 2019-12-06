@@ -134,6 +134,7 @@ public class HurdleGameController : MonoBehaviour
     {
         if (didFly)
         {
+            PlayerPrefs.SetString("hurdle", "won");
             highScore.SetActive("High Score\n" + newName + "        " + "The Flyer!!");
             highScore.instructionText.text = "Press Enter to EXIT";
         }

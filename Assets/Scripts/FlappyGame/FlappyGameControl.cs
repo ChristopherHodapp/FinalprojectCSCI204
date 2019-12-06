@@ -13,7 +13,7 @@ public class FlappyGameControl : MonoBehaviour
     public int initialDifficulty;
     public Coin coin;
     public HighScoreScreenController highScore;
-    public int currentHighScore = 25;
+    public int currentHighScore = 5;
     public string newName = "two";
     public Text scoreText;
     public Text coinScoreText;
@@ -59,9 +59,8 @@ public class FlappyGameControl : MonoBehaviour
         {
             highScore.SetInActive();
         }
-        if ( isEnterPressed || won)
+        if ( isEnterPressed)
         {
-            Destroy(instance);
             SceneManager.LoadScene("Room2");
         }
     }
@@ -91,7 +90,7 @@ public class FlappyGameControl : MonoBehaviour
             return;
         }
 
-        coinScore++;
+        coinScore += 10;
         coinScoreText.text = "Coins: " + coinScore.ToString();
     }
     public void BirdDied()
@@ -103,6 +102,7 @@ public class FlappyGameControl : MonoBehaviour
         {
             won = true;
             highScore.SetActive("High Score\n" + newName + "        " + (score + coinScore) + " points");
+            PlayerPrefs.SetString("flappy", "won");
         }
         else
         {

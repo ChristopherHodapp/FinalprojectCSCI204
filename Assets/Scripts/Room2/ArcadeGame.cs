@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcadeGame : MonoBehaviour
+public class ArcadeGame : ClickableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string gameName;
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseDown()
     {
-        
+        print("clicked " + gameName);
+        SceneControl.NextScene(gameName);
     }
 }

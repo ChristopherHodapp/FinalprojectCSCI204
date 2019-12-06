@@ -21,7 +21,8 @@ public class RollABallController : MonoBehaviour
     void Start()
     {
         highScore.SetActive();
-	}
+        PlayerPrefs.DeleteAll();
+    }
 
 
     // Update is called once per frame
@@ -48,6 +49,7 @@ public class RollABallController : MonoBehaviour
         if (newHighScore)
         {
             highScore.SetActive("High Score\n" + newName + "        " + maxPoints + " points");
+            PlayerPrefs.SetString("rolly", "won");
         }
 
         highScore.SetActive();

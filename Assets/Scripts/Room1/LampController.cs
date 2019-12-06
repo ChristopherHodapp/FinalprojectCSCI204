@@ -14,6 +14,7 @@ public class LampController : ClickableObject
     }
     void OnMouseDown()
     {
+        print("lamp clicked");
         lt.color = colorList[pointer];
 
         if (pointer == 2)
