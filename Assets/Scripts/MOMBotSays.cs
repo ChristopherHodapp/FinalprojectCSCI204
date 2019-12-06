@@ -9,26 +9,33 @@ public class MOMBotSays : MonoBehaviour
     public GameObject canvas2;
     public GameObject canvas3;
     public GameObject canvas4;
+    
 
-    public GameObject[] colorList = new GameObject[4];
+    public List<GameObject> sayings = new List<GameObject>();
 
     int pointer;
 
     void Start()
     {
-        //colorList = new GameObject{ canvas1, canvas2, canvas3, canvas4 };
+        sayings.Add(canvas1);
+        sayings.Add(canvas2);
+        sayings.Add(canvas3);
+        sayings.Add(canvas4);
     }
-    void OnMouseDown()
+    public void Sayit()
     {
         if (pointer == 0)
         {
-            colorList[pointer].SetActive(true);
+            sayings[pointer].SetActive(true);
         }else
         {
-            colorList[pointer - 1].SetActive(false);
-            colorList[pointer].SetActive(true);
+            sayings[pointer - 1].SetActive(false);
+            if (pointer < 4)
+            {
+                sayings[pointer].SetActive(true);
+            }
         }
-        if (pointer == 2)
+        if (pointer > 3)
         {
             pointer = 0;
         }

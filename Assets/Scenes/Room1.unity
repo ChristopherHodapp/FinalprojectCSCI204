@@ -2176,7 +2176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &155156212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3660,7 +3660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &277354882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6970,7 +6970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &646761028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7719,6 +7719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b8b4baf8a804c59ade3984b3050681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wall2: {fileID: 0}
 --- !u!28 &712796293
 Texture2D:
   m_ObjectHideFlags: 0
@@ -7864,6 +7865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b8b4baf8a804c59ade3984b3050681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wall2: {fileID: 0}
 --- !u!136 &714926422
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10481,6 +10483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001827824}
   - component: {fileID: 1001827825}
+  - component: {fileID: 1001827826}
   m_Layer: 0
   m_Name: Part1
   m_TagString: Untagged
@@ -10519,6 +10522,23 @@ MonoBehaviour:
   light2: {fileID: 714926418}
   light3: {fileID: 1540265087}
   wall: {fileID: 1344273973}
+--- !u!114 &1001827826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001827823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f351076c90bd9484290e3206e6107942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas1: {fileID: 1234671833}
+  canvas2: {fileID: 155156211}
+  canvas3: {fileID: 376038389}
+  canvas4: {fileID: 1075818797}
+  sayings: []
 --- !u!28 &1005122601
 Texture2D:
   m_ObjectHideFlags: 0
@@ -11036,7 +11056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1075818798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13863,7 +13883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1344273974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15875,7 +15895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1509109211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16332,6 +16352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b8b4baf8a804c59ade3984b3050681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wall2: {fileID: 0}
 --- !u!136 &1540265091
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17027,6 +17048,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1575657258}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1576860451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 9bc8790d29ff91e428fac32b57e3b66b,
+    type: 3}
+  m_PrefabInstance: {fileID: 180001120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1576860454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576860451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c356575ca324a538b2e3c8a74cedad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wall2: {fileID: 646761027}
+--- !u!65 &1576860455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576860451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1473637, y: 0.56859845, z: 0.76552236}
+  m_Center: {x: -0.029892415, y: 1, z: -0.021787658}
 --- !u!28 &1577811746
 Texture2D:
   m_ObjectHideFlags: 0
@@ -17187,6 +17240,25 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1606785954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1306053795082570, guid: 11ca9bb6fe77b46139d8dc61f8dc9b0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 105998342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1606785959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606785954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c356575ca324a538b2e3c8a74cedad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wall2: {fileID: 1509109210}
 --- !u!28 &1607456231
 Texture2D:
   m_ObjectHideFlags: 0
@@ -19350,7 +19422,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dont Know the objective yet!?!?!?!?
+  m_Text: 'You are taking a lot of time!
+
+'
 --- !u!222 &1848060950
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20784,6 +20858,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1989432109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1993255425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e0ffd8c5b85b55d4f811261cdce2eaf5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1202658144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1993255427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993255425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0dd803bf1114c9bb65f140b95cce59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sayit: {fileID: 1001827823}
+--- !u!136 &1993255428
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993255425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!28 &1994122248
 Texture2D:
   m_ObjectHideFlags: 0
@@ -25749,6 +25856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationSpeed: 100
+  cam: {fileID: 0}
 --- !u!4 &7219031135410410993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7219031135880025359, guid: db466dce2f08d7a46b540f0e50ff4a0e,
