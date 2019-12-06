@@ -8,6 +8,7 @@ public class GUIControl : MonoBehaviour
     public Canvas playCanvas;
     public Canvas settingsCanvas;
     public Canvas creditsCanvas;
+
     public GameObject room2Button;
     public bool testRoom2;
     public bool testSave;
@@ -18,6 +19,7 @@ public class GUIControl : MonoBehaviour
         playCanvas.enabled = false;
         settingsCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        
     }
 
     void Update()
@@ -80,6 +82,6 @@ public class GUIControl : MonoBehaviour
 
     public void ResetProgress()
     {
-        PlayerPrefs.DeleteAll();
+        SaveController.SetRoom1Clear(false);
     }
 }

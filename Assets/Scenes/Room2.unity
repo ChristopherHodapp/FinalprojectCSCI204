@@ -3366,6 +3366,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7219031135682078245, guid: db466dce2f08d7a46b540f0e50ff4a0e,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219031135682078245, guid: db466dce2f08d7a46b540f0e50ff4a0e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7219031135682078241, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3374,7 +3384,7 @@ PrefabInstance:
     - target: {fileID: 7219031135682078241, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7219031135682078241, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
@@ -3439,16 +3449,6 @@ PrefabInstance:
     - target: {fileID: 7219031135682078244, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7219031135682078245, guid: db466dce2f08d7a46b540f0e50ff4a0e,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7219031135682078245, guid: db466dce2f08d7a46b540f0e50ff4a0e,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7219031135880025359, guid: db466dce2f08d7a46b540f0e50ff4a0e,
@@ -4743,7 +4743,7 @@ Rigidbody:
   m_GameObject: {fileID: 917509017}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 2
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
