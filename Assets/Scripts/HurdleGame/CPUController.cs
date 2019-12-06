@@ -15,7 +15,6 @@ public class CPUController : MonoBehaviour
     private bool raceStarted;
     private int hurdlesHit;
     private string finalTime;
-    private float sphereRadius = 0.5f;
     private float speed;
     private string unofficialTime;
     private Animator anim;
