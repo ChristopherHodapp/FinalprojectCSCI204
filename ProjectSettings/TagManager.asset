@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - coin
+  - Hurdle
+  - JumpTrigger
+  - Stefani
+  - Liam
+  - rotateZ
+  - out of bounds
+  - rotateX
+  - pickup
+  - Flying
   layers:
   - Default
   - TransparentFX

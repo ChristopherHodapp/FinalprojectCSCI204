@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RollyGame.unity
+    guid: c0b2ef903aee94cfcb84f424a5fcac4f
+  - enabled: 1
+    path: Assets/Scenes/Room2.unity
+    guid: 39c4f15f3b943e24db41c8626c0c3024
+  - enabled: 1
+    path: Assets/Scenes/Room1.unity
+    guid: 5a96ca3772c5ee545986f6d712c4af76
+  - enabled: 1
+    path: Assets/Scenes/Startup.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/flappy.unity
+    guid: 10ef2effac45642fab843a417b9df5a5
+  - enabled: 1
+    path: Assets/Scenes/hurdle.unity
+    guid: b98408090040c447aaf4171352c99d58
   m_configObjects: {}
