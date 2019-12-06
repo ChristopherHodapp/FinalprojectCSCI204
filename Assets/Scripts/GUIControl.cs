@@ -8,9 +8,13 @@ public class GUIControl : MonoBehaviour
     public Canvas playCanvas;
     public Canvas settingsCanvas;
     public Canvas creditsCanvas;
+<<<<<<< HEAD
+   
+=======
     public GameObject room2Button;
     public bool testRoom2;
     public bool testSave;
+>>>>>>> 97457fadf1bb12e5cdd230a7939a766c5da751f8
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +22,7 @@ public class GUIControl : MonoBehaviour
         playCanvas.enabled = false;
         settingsCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        
     }
 
     void Update()
@@ -67,6 +72,10 @@ public class GUIControl : MonoBehaviour
     {
         creditsCanvas.enabled = false;
     }
+<<<<<<< HEAD
+    
+
+=======
 
     public void PlayRoom1()
     {
@@ -80,6 +89,7 @@ public class GUIControl : MonoBehaviour
 
     public void ResetProgress()
     {
-        PlayerPrefs.DeleteAll();
+        SaveController.SetRoom1Clear(false);
     }
+>>>>>>> 97457fadf1bb12e5cdd230a7939a766c5da751f8
 }

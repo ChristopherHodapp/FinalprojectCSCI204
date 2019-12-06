@@ -8,10 +8,6 @@ public class MainPlayerController : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     private Rigidbody rb;
-    public Camera cam;
-    private RaycastHit hit;
-
-    private 
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +31,6 @@ public class MainPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
-        {
-            if(hit.collider.tag == "clickableObject")
-            {
-                hit.collider.gameObject.GetComponent<ClickableObject>();
-            }
-        }
+       
     }
 }

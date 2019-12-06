@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class Part4Controller : MonoBehaviour
 {
-    //public GameObject queenSpade1;
-    //public GameObject kingHeart1;
-    //public GameObject jackHeart1;
-    //public GameObject aceClub1;
-    //public GameObject queenSpade2;
-    //public GameObject kingHeart2;
-    //public GameObject jackHeart2;
-    //public GameObject aceClub2;
-
     private CardController card1;
     private CardController card2;
     private int matches;
@@ -30,6 +21,9 @@ public class Part4Controller : MonoBehaviour
                 matches++;
                 if(matches == 4)
                 {
+                    PlayerPrefs.DeleteAll();
+                    PlayerPrefs.SetString("room1", "solved");
+                    PlayerPrefs.Save();
                     SceneControl.NextScene("room2");
                 }
                 card1 = null;
