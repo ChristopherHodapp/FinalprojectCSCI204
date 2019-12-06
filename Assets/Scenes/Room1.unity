@@ -1321,6 +1321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_lamp2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.39244986
@@ -7080,9 +7084,11 @@ GameObject:
   m_Component:
   - component: {fileID: 700088728}
   - component: {fileID: 700088729}
+  - component: {fileID: 700088731}
+  - component: {fileID: 700088730}
   m_Layer: 0
   m_Name: Spot Light
-  m_TagString: Untagged
+  m_TagString: clickableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7112,7 +7118,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0, g: 0.084820986, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7161,6 +7167,32 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!136 &700088730
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700088727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &700088731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700088727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b8b4baf8a804c59ade3984b3050681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!28 &712796293
 Texture2D:
   m_ObjectHideFlags: 0
@@ -7211,9 +7243,11 @@ GameObject:
   m_Component:
   - component: {fileID: 714926419}
   - component: {fileID: 714926420}
+  - component: {fileID: 714926422}
+  - component: {fileID: 714926421}
   m_Layer: 0
   m_Name: Spot Light (1)
-  m_TagString: Untagged
+  m_TagString: clickableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7243,7 +7277,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 0, g: 1, b: 0.17519307, a: 1}
-  m_Intensity: 1
+  m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7292,6 +7326,32 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &714926421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714926418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b8b4baf8a804c59ade3984b3050681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &714926422
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714926418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!28 &730233754
 Texture2D:
   m_ObjectHideFlags: 0
@@ -9617,6 +9677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1001827824}
+  - component: {fileID: 1001827825}
   m_Layer: 0
   m_Name: Part1
   m_TagString: Untagged
@@ -9639,6 +9700,22 @@ Transform:
   m_Father: {fileID: 959639640}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001827825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001827823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f0aec4e8ecc43fe84af007e9920c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light1: {fileID: 700088727}
+  light2: {fileID: 714926418}
+  light3: {fileID: 1540265087}
+  wall: {fileID: 1344273973}
 --- !u!28 &1005122601
 Texture2D:
   m_ObjectHideFlags: 0
@@ -10911,6 +10988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_lamp2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
+      propertyPath: m_TagString
+      value: clickableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.39244986
@@ -11080,6 +11161,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: e0ffd8c5b85b55d4f811261cdce2eaf5,
+        type: 3}
+      propertyPath: m_Name
+      value: xbot@Idle
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e0ffd8c5b85b55d4f811261cdce2eaf5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11134,11 +11220,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: e0ffd8c5b85b55d4f811261cdce2eaf5,
-        type: 3}
-      propertyPath: m_Name
-      value: xbot@Idle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ffd8c5b85b55d4f811261cdce2eaf5, type: 3}
@@ -14441,9 +14522,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1540265088}
   - component: {fileID: 1540265089}
+  - component: {fileID: 1540265091}
+  - component: {fileID: 1540265090}
   m_Layer: 0
   m_Name: Spot Light (2)
-  m_TagString: Untagged
+  m_TagString: clickableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14473,7 +14556,7 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -14522,6 +14605,32 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1540265090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540265087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b8b4baf8a804c59ade3984b3050681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &1540265091
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540265087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!28 &1547167893
 Texture2D:
   m_ObjectHideFlags: 0
@@ -17117,6 +17226,30 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1850266547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7219031135880025356, guid: db466dce2f08d7a46b540f0e50ff4a0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7219031135410410989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1850266550 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7219031135880025353, guid: db466dce2f08d7a46b540f0e50ff4a0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7219031135410410989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1850266551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850266547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436a61ce8dbba49e098aa13ab61ac7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!28 &1851138450
 Texture2D:
   m_ObjectHideFlags: 0
@@ -17850,6 +17983,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
       propertyPath: m_Name
       value: wall_lamp2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: faee92ffc4795154fb6db56ff24e9bbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18936,6 +19073,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 180001121}
     m_Modifications:
+    - target: {fileID: 145358, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
+      propertyPath: m_Name
+      value: TableClock Type3
+      objectReference: {fileID: 0}
     - target: {fileID: 106850, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -18967,10 +19108,6 @@ PrefabInstance:
     - target: {fileID: 131482, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 145358, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
-      propertyPath: m_Name
-      value: TableClock Type3
       objectReference: {fileID: 0}
     - target: {fileID: 145486, guid: 574ea592a0ebb814c8e7dad54ba216ba, type: 3}
       propertyPath: m_IsActive
@@ -19325,6 +19462,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7219031135682078245, guid: db466dce2f08d7a46b540f0e50ff4a0e,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7219031135682078241, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19333,7 +19475,7 @@ PrefabInstance:
     - target: {fileID: 7219031135682078241, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7219031135682078241, guid: db466dce2f08d7a46b540f0e50ff4a0e,
         type: 3}
@@ -19380,11 +19522,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7219031135682078245, guid: db466dce2f08d7a46b540f0e50ff4a0e,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db466dce2f08d7a46b540f0e50ff4a0e, type: 3}
 --- !u!1 &7219031135410410990 stripped
@@ -19423,3 +19560,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationSpeed: 100
+  cam: {fileID: 1850266550}
