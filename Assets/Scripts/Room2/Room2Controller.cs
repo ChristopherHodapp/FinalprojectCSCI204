@@ -25,7 +25,7 @@ public class Room2Controller : MonoBehaviour
         }
         if (PlayerPrefs.GetString("hurdle") == "won")
         {
-            hurdlePlay.SetActive(true);
+            hurdlePlay.SetActive(false);
             hurdleWin.SetActive(true);
         }
     }
@@ -45,7 +45,7 @@ public class Room2Controller : MonoBehaviour
         }
         if (PlayerPrefs.GetString("hurdle") == "won")
         {
-            hurdlePlay.SetActive(true);
+            hurdlePlay.SetActive(false);
             hurdleWin.SetActive(true);
         }
     }
