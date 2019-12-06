@@ -15,6 +15,12 @@ TagManager:
   - pickup
   - Flying
   - clickableObject
+  - breakWall
+  - player
+  - QueenSpades
+  - JackHearts
+  - KingHearts
+  - AceClubs
   layers:
   - Default
   - TransparentFX

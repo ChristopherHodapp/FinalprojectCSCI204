@@ -21,5 +21,27 @@ public class SaveController: MonoBehaviour
         return PlayerPrefs.HasKey("room1");
     }
 
+    public static void SetInt(string key, int value)
+    {
+        PlayerPrefs.SetInt(key, value);
+    }
+
+    public static int GetInt(string key)
+    {
+        return PlayerPrefs.GetInt(key);
+    }
+
+    public static void SetString(string key, string value)
+    {
+        PlayerPrefs.SetString(key, value);
+    }
+
+    public static string GetString(string key)
+    {
+        return PlayerPrefs.GetString(key);
+    }
+
+
+
 
 }

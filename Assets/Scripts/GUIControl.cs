@@ -80,6 +80,6 @@ public class GUIControl : MonoBehaviour
 
     public void ResetProgress()
     {
-        SaveController.SetRoom1Clear(false);
+        PlayerPrefs.DeleteAll();
     }
 }

@@ -11,6 +11,8 @@ public class MainPlayerController : MonoBehaviour
     public Camera cam;
     private RaycastHit hit;
 
+    private 
+
     // Start is called before the first frame update
     void Start()
     {
