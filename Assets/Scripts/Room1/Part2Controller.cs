@@ -9,18 +9,17 @@ public class Part2Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("player"))
+        if (collision.gameObject.CompareTag("Part2 Trigger"))
         {
             wall2.SetActive(false);
         }

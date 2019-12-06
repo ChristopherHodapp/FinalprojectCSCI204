@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ClickableObject : MonoBehaviour
 {
-    
+    public GameObject wall2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,6 @@ public class ClickableObject : MonoBehaviour
 
     void OnMouseDown()
     {
-        
+        wall2.SetActive(false);
     }
 }
