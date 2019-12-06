@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GUIControl : MonoBehaviour
@@ -18,6 +16,7 @@ public class GUIControl : MonoBehaviour
         playCanvas.enabled = false;
         settingsCanvas.enabled = false;
         creditsCanvas.enabled = false;
+        
     }
 
     void Update()
