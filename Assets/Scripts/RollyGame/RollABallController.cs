@@ -21,7 +21,7 @@ public class RollABallController : MonoBehaviour
     void Start()
     {
         highScore.SetActive();
-        PlayerPrefs.DeleteAll();
+      
     }
 
 

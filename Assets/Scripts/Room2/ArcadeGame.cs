@@ -8,7 +8,14 @@ public class ArcadeGame : ClickableObject
 
     void OnMouseDown()
     {
-        print("clicked " + gameName);
-        SceneControl.NextScene(gameName);
+        if (gameName == "solver")
+        {
+            SceneControl.NextScene(gameName);
+        }
+        if (gameName != "notYet")
+        {
+            print("clicked " + gameName);
+            SceneControl.NextScene(gameName);
+        }
     }
 }

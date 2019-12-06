@@ -10,6 +10,10 @@ public class Room2Controller : MonoBehaviour
     public GameObject rollyPlay;
     public GameObject flappyPlay;
     public GameObject hurdlePlay;
+
+    public GameObject solver;
+    private bool winner;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,5 +52,11 @@ public class Room2Controller : MonoBehaviour
             hurdlePlay.SetActive(false);
             hurdleWin.SetActive(true);
         }
+
+        if (PlayerPrefs.GetString("hurdle") == "won" && PlayerPrefs.GetString("flappy") == "won" && PlayerPrefs.GetString("rolly") == "won" ){
+            solver.GetComponent<ArcadeGame>().gameName = "credits";
+        }
     }
+
+   
 }
